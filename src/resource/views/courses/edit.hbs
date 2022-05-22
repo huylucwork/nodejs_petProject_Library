@@ -1,0 +1,20 @@
+<div class="mt-4">
+    <h3 class = "Create-text-align">Update Book</h3>
+    <form method = "POST" action = "/courses/{{course._id}}?_method=PUT">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" value = "{{course.name}}" name = "name">
+        </div>
+        
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" name = "description">{{course.description}}</textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Image</label>
+            <input type="text" class="form-control" value = "{{course.image}}" name = "image">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
